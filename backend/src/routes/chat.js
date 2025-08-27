@@ -6,7 +6,6 @@ router.post("/chat", async (req, res) => {
   try {
     const { message } = req.body;
 
-    // This calls your AI service
     const aiResponse = await getChatGPTResponse(message);
 
     res.json({ reply: aiResponse });
