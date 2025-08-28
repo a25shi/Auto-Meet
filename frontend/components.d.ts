@@ -11,7 +11,10 @@ declare module 'vue' {
     Button: typeof import('primevue/button')['default']
     ChatInterface: typeof import('./src/components/ChatInterface.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    MessageBox: typeof import('./src/components/MessageBox.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    ScrollPanel: typeof import('primevue/scrollpanel')['default']
+    Textarea: typeof import('primevue/textarea')['default']
   }
 }
