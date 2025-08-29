@@ -12,6 +12,9 @@ const messages = ref<Message[]>([]);
 const textarea = ref<string>("");
 
 const handleSend = () => {
+  if (textarea.value === "") {
+    return;
+  }
   const message: Message = {
     id: crypto.randomUUID(),
     text: textarea.value,
